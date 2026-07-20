@@ -12,32 +12,45 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className="w-full pt-20 pb-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/5 -z-10" />
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="flex flex-col gap-8">
+      <section className="w-full pt-20 pb-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden" style={{
+        backgroundImage: 'url(https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-cYZSWDNVTqZiEHGRegAX71KQt5oqrx.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-black/40 -z-10" />
+        <div className="max-w-6xl mx-auto relative z-10">
+          <div className="flex flex-col gap-12">
+            <div className="flex flex-col gap-8 max-w-2xl">
               <div className="flex flex-col gap-6">
-                <h1 className="text-5xl md:text-6xl font-bold text-balance leading-tight text-primary">
-                  Trusted Trucking Solutions
+                <h1 className="text-5xl md:text-6xl font-bold text-balance leading-tight text-white">
+                  Service Meets Excellence
                 </h1>
-                <p className="text-xl text-muted-foreground max-w-2xl">
-                  Professional freight transportation across the nation. Fast, reliable, and secure delivery of your cargo.
+                <p className="text-xl text-white/90 max-w-2xl">
+                  Experience Reliable Trucking Services with Red Hill Logistics.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">
                   Get a Quote
                 </Button>
-                <Button size="lg" variant="outline">
+                <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
                   Learn More
                 </Button>
               </div>
             </div>
-            <div className="relative h-96 lg:h-full min-h-96 rounded-lg bg-gradient-to-br from-primary/20 to-accent/10 flex items-center justify-center overflow-hidden">
-              <Truck className="w-40 h-40 text-primary/30 absolute" />
-              <div className="absolute inset-0 bg-gradient-to-t from-accent/20 to-transparent" />
-            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission Statement Section */}
+      <section className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-primary text-primary-foreground">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col gap-4">
+            <h2 className="text-4xl font-bold text-white">Our Mission</h2>
+            <div className="w-1 h-20 bg-accent rounded" />
+            <p className="text-lg leading-relaxed max-w-3xl text-white/90">
+              We are a leading trucking company delivering across Canada and USA. Our mission is to provide exceptional logistics services to our clients, ensuring timely delivery of goods. Our team is dedicated to ensuring that our clients receive the best service possible, and we are committed to continuously improving our operations.
+            </p>
           </div>
         </div>
       </section>
