@@ -13,13 +13,13 @@ export function Footer() {
           {/* Company Info */}
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-2 font-bold text-xl">
-              <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center text-primary font-bold">
-                T
+              <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center text-white font-bold">
+                R
               </div>
-              <span>TruckCo</span>
+              <span>Red Hill Logistics</span>
             </div>
             <p className="text-accent-foreground/80">
-              Professional trucking and freight transportation services across North America.
+              Professional trucking and freight transportation services across Canada and USA.
             </p>
           </div>
 
@@ -48,17 +48,20 @@ export function Footer() {
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5" />
-                <span className="text-accent-foreground/80">(555) 123-4567</span>
+                <div className="flex flex-col text-accent-foreground/80 text-sm">
+                  <span>(437) 771-5011</span>
+                  <span>(647) 928-0072</span>
+                </div>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5" />
-                <a href="mailto:info@truckco.com" className="text-accent-foreground/80 hover:text-accent-foreground transition-colors">
-                  info@truckco.com
+                <a href="mailto:dispatch@redhillgroup.ca" className="text-accent-foreground/80 hover:text-accent-foreground transition-colors">
+                  dispatch@redhillgroup.ca
                 </a>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
-                <span className="text-accent-foreground/80">123 Freight Lane, Transport City, TX 75001</span>
+                <span className="text-accent-foreground/80">14 Crosswood Lane, Brampton, ON, Canada</span>
               </div>
             </div>
           </div>
@@ -67,7 +70,7 @@ export function Footer() {
         <div className="border-t border-accent-foreground/20 pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-accent-foreground/70 text-sm">
-              &copy; {currentYear} TruckCo. All rights reserved.
+              &copy; {currentYear} Red Hill Logistics. All rights reserved.
             </p>
             <div className="flex gap-6">
               <Link href="#privacy" className="text-accent-foreground/70 hover:text-accent-foreground text-sm transition-colors">

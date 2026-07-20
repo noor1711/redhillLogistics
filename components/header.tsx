@@ -13,10 +13,10 @@ export function Header() {
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 font-bold text-xl text-primary hover:text-primary/80 transition-colors">
-          <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center text-primary font-bold">
-            T
+          <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center text-white font-bold">
+            R
           </div>
-          TruckCo
+          Red Hill Logistics
         </Link>
 
         {/* Desktop Navigation */}
